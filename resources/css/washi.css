@@ -1,0 +1,58 @@
+/* Washi paper texture — a faint fibrous grain, not a flat cream fill */
+.washi-bg {
+    background-color: #F7F5F2;
+    background-image:
+        repeating-linear-gradient(115deg, rgba(28, 20, 15, 0.015) 0px, rgba(28, 20, 15, 0.015) 1px, transparent 1px, transparent 3px),
+        repeating-linear-gradient(25deg, rgba(28, 20, 15, 0.012) 0px, rgba(28, 20, 15, 0.012) 1px, transparent 1px, transparent 4px);
+}
+
+/* Hanko seal — stamped (studied today) */
+.hanko-stamped {
+    position: relative;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #D6193F 0%, #BC002D 55%, #96001F 100%);
+    box-shadow: 0 3px 0 rgba(150, 0, 31, 0.35), 0 6px 14px rgba(188, 0, 45, 0.25);
+    animation: hanko-stamp-down 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hanko-stamped::after {
+    content: '';
+    position: absolute;
+    inset: 6%;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Hanko seal — not yet stamped (ghost outline, invites action) */
+.hanko-ghost {
+    border-radius: 50%;
+    border: 2px dashed rgba(28, 20, 15, 0.22);
+    background: transparent;
+}
+
+@keyframes hanko-stamp-down {
+    0% { transform: scale(1.4) rotate(-8deg); opacity: 0; }
+    55% { transform: scale(0.92) rotate(2deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+/* Vertical kakejiku accent rule with tategaki-style label */
+.kakejiku-rule {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.15em;
+}
+
+/* Postcard-style deck tile: slight lift + tilt on hover, like picking up a card */
+.postcard-tile {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.postcard-tile:hover {
+    transform: translateY(-3px) rotate(-0.4deg);
+    box-shadow: 0 10px 24px rgba(28, 20, 15, 0.08);
+}
+
+/* Obi sash band — indigo horizontal strip used for secondary stats */
+.obi-band {
+    background: linear-gradient(90deg, #24394A 0%, #29465B 55%, #315372 100%);
+}
