@@ -1,0 +1,12 @@
+[providers.php]
+rootDir = "public"
+
+[phases.build]
+cmds = [
+  "composer install --no-dev --optimize-autoloader",
+  "npm install && npm run build"
+]
+
+[phases.release]
+dependsOn = ["build"]
+cmds = ["php artisan migrate --force"]
