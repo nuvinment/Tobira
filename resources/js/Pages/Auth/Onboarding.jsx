@@ -58,7 +58,7 @@ export default function Onboarding() {
     }
 
     return (
-        <AuthLayout title="Tell us about you — Tobira">
+        <AuthLayout title="Tell us about you - Tobira">
             <div style={s.title}>Almost there</div>
             <div style={s.sub}>A few quick details to personalize your study plan</div>
 

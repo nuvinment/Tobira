@@ -170,7 +170,7 @@ export default function Welcome() {
 
     // Inject styles on mount
     useEffect(() => {
-        document.title = 'Tobira — Business Japanese Spaced Repetition Platform';
+        document.title = 'Tobira - Business Japanese Spaced Repetition Platform';
         if (!document.getElementById('tobira-welcome-styles')) {
             const el = document.createElement('style');
             el.id = 'tobira-welcome-styles';

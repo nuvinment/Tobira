@@ -21,7 +21,7 @@ export default function Users() {
     }
 
     useEffect(() => {
-        document.title = 'Manage Users — Tobira';
+        document.title = 'Manage Users - Tobira';
         load();
     }, []);
 

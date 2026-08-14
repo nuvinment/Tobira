@@ -27,7 +27,7 @@ export default function VerifyEmail() {
     const inputsRef = useRef([]);
 
     useEffect(() => {
-        document.title = 'Verify Email — Tobira';
+        document.title = 'Verify Email - Tobira';
         if (!userId) {
             navigate('/register', { replace: true });
         }

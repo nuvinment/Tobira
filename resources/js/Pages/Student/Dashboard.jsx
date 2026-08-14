@@ -20,7 +20,7 @@ export default function StudentDashboard() {
     const [levelFilter, setLevelFilter] = useState('');
 
     useEffect(() => {
-        document.title = 'Dashboard — Tobira';
+        document.title = 'Dashboard - Tobira';
 
         api.get('/dashboard')
             .then((res) => setStats(res.data))

@@ -22,7 +22,7 @@ export default function Study() {
     const [deckInfo, setDeckInfo] = useState(null);
 
     useEffect(() => {
-        document.title = 'Study — Tobira';
+        document.title = 'Study - Tobira';
         setLoading(true);
 
         const dueRequest = api.get('/reviews/due', { params: deckId ? { deck_id: deckId } : {} });

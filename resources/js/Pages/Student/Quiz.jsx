@@ -38,7 +38,7 @@ export default function Quiz() {
     const [answered, setAnswered] = useState(false);
 
     useEffect(() => {
-        document.title = 'Quiz — Tobira';
+        document.title = 'Quiz - Tobira';
         setLoading(true);
         api.get('/quiz/cards', { params: deckId ? { deck_id: deckId } : {} })
             .then((res) => {

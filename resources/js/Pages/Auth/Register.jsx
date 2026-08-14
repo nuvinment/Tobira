@@ -61,7 +61,7 @@ export default function Register() {
     ];
 
     return (
-        <AuthLayout title="Create Account — Tobira">
+        <AuthLayout title="Create Account - Tobira">
             <Link to="/" style={s.back}>← Back to Home</Link>
 
             <div style={s.title}>Create your account</div>

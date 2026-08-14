@@ -50,7 +50,7 @@ export default function Login() {
     }
 
     return (
-        <AuthLayout title="Login — Tobira">
+        <AuthLayout title="Login - Tobira">
             <Link to="/" style={s.back}>← Back to Home</Link>
 
             <div style={s.title}>Welcome back</div>

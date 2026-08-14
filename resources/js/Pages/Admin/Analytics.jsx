@@ -14,7 +14,7 @@ export default function Analytics() {
     const [error, setError] = useState('');
 
     useEffect(() => {
-        document.title = 'Analytics — Tobira';
+        document.title = 'Analytics - Tobira';
         Promise.all([
             api.get('/admin/analytics/daily-active-users'),
             api.get('/admin/analytics/deck-engagement'),

@@ -18,7 +18,7 @@ export default function Interview() {
     const chatEndRef = useRef(null);
 
     useEffect(() => {
-        document.title = 'AI Interview Practice — Tobira';
+        document.title = 'AI Interview Practice - Tobira';
 
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         if (!SpeechRecognition) {

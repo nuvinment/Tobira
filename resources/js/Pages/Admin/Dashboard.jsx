@@ -13,7 +13,7 @@ export default function AdminDashboard() {
     const [error, setError] = useState('');
 
     useEffect(() => {
-        document.title = 'Admin Dashboard — Tobira';
+        document.title = 'Admin Dashboard - Tobira';
 
         Promise.all([api.get('/decks'), api.get('/admin/overview')])
             .then(([decksRes, overviewRes]) => {
