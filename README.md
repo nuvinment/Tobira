@@ -1,4 +1,4 @@
-# Tobira 扉 — Business Japanese Spaced Repetition Learning Platform
+# Tobira 扉 - Business Japanese Spaced Repetition Learning Platform
 
 Tobira is a full-stack web application that helps learners master Business
 Japanese — keigo, workplace vocabulary, and interview phrases — using the
